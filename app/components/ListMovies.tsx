@@ -13,6 +13,7 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 const ListStyled = styled.section`
     padding: 4rem 1rem;
     margin-top: 3rem;
+   
     
 
     .list {
@@ -46,7 +47,7 @@ const ListStyled = styled.section`
     }
 
     .navigation-pages button {
-        padding: .8rem 1rem;
+        padding: .8rem;
         border: none;
         color: #5C0099;
         background-color: transparent;
@@ -86,9 +87,6 @@ export default function ListMovies({ nameList } : IListMovie ) {
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
     const maxPageNumbersToShow = 7;
-
-    console.log(moviesList)
-
 
     useEffect(() => {
         api.get(`movie/popular?page=${page}`)

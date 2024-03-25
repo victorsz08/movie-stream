@@ -8,16 +8,20 @@ import Link from "next/link";
 
 
 const CardStyled = styled.div`
-    padding: 1.8rem;
+    padding: 1.2rem;
     margin: .5rem;
     cursor: pointer;
     border-radius: 1.1rem;
     border: 2px solid #5C0099;
-    max-width: 13rem;
+    max-width: 12rem;
 
     h3 {
         color: #D6D6D6;
         font-size: .8rem;
+    }
+
+    .card-infos {
+        margin-bottom: 1.2rem;
     }
 
     .card-infos h4 {

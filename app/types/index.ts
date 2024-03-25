@@ -10,7 +10,29 @@ export type IMovie =  {
     backdrop_path?: string;
     poster_path?: string;
     overview?: string;
-}   
+    production_companies?: IProductionCompanies[];
+    runtime?: string | number;
+    status?: boolean;
+    genres?: IGenres[]
+    tagline?: string;
+}  
+
+export type IProductionCompanies = {
+    id?: string;
+    logo_path?: string;
+    name?: string;
+    origin_country?: string;
+}
+export type IGenres = {
+    id?: string | number;
+    name?: string;
+}
+
+export type ICredits = {
+    name?: string;
+    profile_path?: string;
+    character?: string;
+}
 
 export type IListMovie = {
     nameList?: string;

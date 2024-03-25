@@ -91,7 +91,6 @@ export default function Home() {
   useEffect(() => {
     api.get("movie/upcoming")
       .then(res => {
-        console.log(res?.data.results[0])
         setMovieBanner(res?.data.results[0])
       }).catch(err => {
         console.log(err?.response?.data)
