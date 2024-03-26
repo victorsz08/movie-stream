@@ -14,6 +14,10 @@ const CardStyled = styled.div`
     border-radius: 1.1rem;
     border: 2px solid #5C0099;
     max-width: 12rem;
+    
+    a {
+        text-decoration: none;
+    }
 
     h3 {
         color: #D6D6D6;
@@ -83,7 +87,8 @@ export default function CardMovie({ poster, title, vote_average, date_release, i
 
     return (
         <CardStyled>
-            <Link href={`movie/${id}`}><img src={`https://image.tmdb.org/t/p/original${poster}`} alt={title}/></Link> 
+            <Link href={`${id}`}>
+            <img src={`https://image.tmdb.org/t/p/original${poster}`} alt={title}/> 
             <div className="card-infos">
                 <h3>{title}</h3>
                 <div className="graphic">
@@ -102,6 +107,7 @@ export default function CardMovie({ poster, title, vote_average, date_release, i
                 </div>
             </div>
                 <p>{formatDate(date_release || "")}</p>
+                </Link>
         </CardStyled>
     )
 }

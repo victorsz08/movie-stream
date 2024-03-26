@@ -29,13 +29,21 @@ export type IGenres = {
 }
 
 export type ICredits = {
+    id?: string;
     name?: string;
     profile_path?: string;
     character?: string;
 }
 
+export type IProvider = {
+    provider_id?: string;
+    provider_name?: string;
+    logo_path?: string;
+}
+
 export type IListMovie = {
     nameList?: string;
+    children?: React.ReactNode;
 };
 
 export type ICardMovie = {

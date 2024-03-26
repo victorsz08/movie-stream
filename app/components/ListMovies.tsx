@@ -149,7 +149,7 @@ export default function ListMovies({ nameList } : IListMovie ) {
             <h2>{nameList}</h2>
             <main className="list">
             {moviesList.map(movie => (
-                <CardMovie id={movie.id} key={movie.id} title={movie.title} poster={movie.poster_path} date_release={movie.release_date} vote_average={movie.vote_average} />
+                <CardMovie id={`movie/${movie.id}`} key={movie.id} title={movie.title} poster={movie.poster_path} date_release={movie.release_date} vote_average={movie.vote_average} />
               ))}
             </main>
             <nav className="navigation-pages">

@@ -1,0 +1,83 @@
+
+  #banner {
+    height: 40rem;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(10%) blur(1px);
+  }
+
+  .movie-info {
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8rem;
+  }
+
+  .movie-info img {
+    width: 18rem;
+    border-radius: 0.5rem;
+    margin-right: 2.2rem;
+  }
+
+  .more-infos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .more-infos div {
+    margin-right: 1.6rem;
+  }
+
+  .more-infos p {
+    font-size: 0.6rem;
+  }
+
+  .infos {
+    color: #d6d6d6;
+  }
+
+  .infos h6 {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 3rem;
+  }
+
+  .infos p {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .infos strong {
+    font-size: 0.7rem;
+  }
+
+  .company-container {
+    display: flex;
+  }
+
+  .company-container p {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+
+  .avaibles {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .genres {
+    display: flex;
+  }
+
+  .genres p {
+    padding: 0.6rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
+  }
