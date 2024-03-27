@@ -35,6 +35,13 @@ export type ICredits = {
     character?: string;
 }
 
+export type IInputSearch = {
+    placeholder: string;
+    value?: string;
+    onchange: (e: string) => void;
+    onclick?: () => void;  
+}
+
 export type IProvider = {
     provider_id?: string;
     provider_name?: string;

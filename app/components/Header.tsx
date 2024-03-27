@@ -70,7 +70,7 @@ export default function Header() {
             <nav>
                 <Link href="/">HOME</Link>
                 <Link href="/">LANÇAMENTOS</Link>
-                <Link href="/">FILMES</Link>
+                <Link href="/filmes">FILMES</Link>
                 <Link href="/">SERIES/TV</Link>
                 <Link href="/">SOBRE</Link>
             </nav>

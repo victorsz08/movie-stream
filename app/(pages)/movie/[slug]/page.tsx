@@ -180,6 +180,7 @@ const MovieStyled = styled.section`
 
 
 export default function Movie({ params }: { params: { slug: string } }) {
+
   return (
     <MovieStyled>
       <MovieComponent params={params.slug}/>

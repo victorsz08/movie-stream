@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-import GraphicCircle from "./GraphicCircle";
 import { ICardMovie } from "../types";
 import Link from "next/link";
 
