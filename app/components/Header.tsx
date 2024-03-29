@@ -69,9 +69,8 @@ export default function Header() {
             </div>
             <nav>
                 <Link href="/">HOME</Link>
-                <Link href="/">LANÇAMENTOS</Link>
                 <Link href="/filmes">FILMES</Link>
-                <Link href="/">SERIES/TV</Link>
+                <Link href="/seriestv">SERIES/TV</Link>
                 <Link href="/">SOBRE</Link>
             </nav>
         </HeaderStyled>

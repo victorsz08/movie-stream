@@ -24,9 +24,57 @@ export type IProductionCompanies = {
     origin_country?: string;
 }
 export type IGenres = {
-    id?: string | number;
+    id: string | number;
     name?: string;
 }
+
+export type ISerieTv = {
+    backdrop_path?: string;
+    tagline?: string;
+    number_of_seasons?: string;
+    number_of_episodes?: string;
+    first_air_date?: string;
+    genres?: IGenres[];
+    id?: string;
+    name?: string;
+    original_name?: string;
+    overview?: string;
+    popularity?: string;
+    poster_path?: string;
+    vote_average?: string;
+    vote_count?: string;
+    production_companies?: IProductionCompanies[];
+    seasons?: ISeasons[];
+}
+
+export type ISeasons = {
+    air_date?: string;
+    episode_count?: number;
+    id?: string;
+    name?: string
+    overview?: string;
+    poster_path?: string;
+    serie_id?: string;
+    season_number?: string;
+    episodes?: IEpisodes[];
+}
+
+export type IEpisodes = {
+    air_date?: string;
+    crew?: string;
+    episode_number?: string; 
+    episode_type?: string;
+    guest_stars?: string;
+    id?: string;
+    name?: string;
+    overview?: string;
+    production_code?: string;
+    runtime?: string;
+    season_number?: string;
+    show_id?: string;
+    still_path?: string;
+}
+
 
 export type ICredits = {
     id?: string;

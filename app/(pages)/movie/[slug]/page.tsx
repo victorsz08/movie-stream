@@ -184,7 +184,7 @@ export default function Movie({ params }: { params: { slug: string } }) {
   return (
     <MovieStyled>
       <MovieComponent params={params.slug}/>
-      <CastsList params={params.slug}/>
+      <CastsList params={`movie/${params.slug}`}/>
       <RecommendList params={params.slug}/>
     </MovieStyled>
   );

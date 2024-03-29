@@ -86,7 +86,7 @@ export default function CardMovie({ poster, title, vote_average, date_release, i
 
     return (
         <CardStyled>
-            <Link href={`${id}`}>
+            <Link href={`/movie/${id}`}>
             <img src={`https://image.tmdb.org/t/p/original${poster}`} alt={title}/> 
             <div className="card-infos">
                 <h3>{title}</h3>
